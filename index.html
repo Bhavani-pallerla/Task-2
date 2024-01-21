@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Form</title>
+    <style>
+        body{
+            padding: 5px;
+        }
+        .flex{
+            display: flex;
+            column-gap: 30px;
+            flex-wrap: wrap;
+            row-gap: 10px;
+        }
+        .box{
+            min-width:400px;
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid grey;
+        }
+        .box1{
+            min-width: 200px;
+        }
+        select{
+            min-width:400px;
+            padding: 5px;
+            background-color: lightgray;
+            border-radius: 5px;
+            border: 1px solid grey;
+        }
+        button{
+            background-color: rgb(249, 194, 12);
+            padding: 5px;
+            border: 1px solid rgb(249, 194, 12);
+            border-radius: 5px;
+        }
+        label{
+            font-weight: bold;
+        }
+        .diff{
+            background-color: white;
+            color: blue;
+            border: 0px solid white;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+<label for="Country">Country/Region</label><br>
+<select class="box">
+    <option>India</option>
+    <option>Germany</option>
+    <option>Canada</option>
+    <option>UK</option>
+    <option>USA</option>
+</select><br><br>
+<label for="name">Full name(First and Last name)</label><br>
+<input type="text" class="box"><br><br>
+<label for="phno">Mobile Number</label><br>
+<input type="number" class="box"><br>May be used to assist delivery<br><br>
+<label for="pincode">Pincode</label><br>
+<input type="number" class="box" placeholder="6 digits[0-9] PIN code" maxlength="6"><br><br>
+<label for="address">Flat, House no., Building, Company, Apartment</label><br>
+<input type="text" class="box"><br><br>
+<label for="address">Area, Street, Sector, Village</label><br>
+<input type="text" name="" id="" class="box"><br><br>
+<label for="landmark">Landmark</label><br>
+<input type="text" name="" id="" placeholder="E.g. Near appolo Hospital" class="box"><br><br>
+<div class="flex">
+    <div class="town">
+        <b><label>Town/city</label></b><br>
+        <input type="text" class="box box1">
+    </div>
+    <div class="state">
+        <b><label for="state">State</label></b><br>
+        <select class="box1">Choose a State<option>Telangana</option>
+            <option>Karnataka</option>
+            <option>Maharastra</option>
+            <option>Andhra Pradhesh</option>
+            </select>
+    </div>
+</div><br>
+<input type="checkbox" name="" id="">Make this my default address<br><br>
+<b>Delivery instructions(opional)</b><br>
+<select class="diff"><option>Add preferences,notes,access codes and more</option></select><br>
+<br>
+<button>Add Address</button>
+</form>
+</body>
+</html>
